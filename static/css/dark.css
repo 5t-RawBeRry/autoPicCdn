@@ -1,0 +1,33 @@
+@media (prefers-color-scheme: dark) {
+     :root {
+        --bg: #242424;
+        --deep: #181818;
+        --write: rgba(255, 255, 255, 0.92);
+    }
+    p {
+        color: var(--write) !important;
+    }
+    body,
+    .layui-upload-drag,
+    .layui-table,
+    .layui-input {
+        background-color: var(--bg) !important;
+        background: var(--bg) !important;
+        color: var(--write) !important;
+        border-bottom-color: var(--write) !important;
+    }
+    .layui-layer-dialog {
+        background-color: var(--deep) !important;
+        background: var(--deep) !important;
+        border-bottom-color: var(--deep) !important;
+    }
+    .layui-table {
+        border-bottom-color: var(--deep) !important;
+    }
+    .layui-table tbody tr:hover {
+        background-color: var(--deep);
+    }
+    .layui-layer-msg {
+        border: 1px solid var(--bg) !important;
+    }
+}
